@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -17,11 +17,29 @@
     <title>UOL</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <img src="assets/logo.jpg"/>
-        
+        <ion-icon name="people"></ion-icon>
     </header>
+    <div id="content">
+        <div class="message message-status">
+            <p><span>(09:21:45) </span><strong>João </strong>entra na sala...</p>
+        </div>
+        <div class="message message-everyone">
+            <p><span>(09:22:28) </span><strong>João </strong>para <strong>Todos: </strong>Bom dia</p>
+        </div>
+        <div class="message message-private">
+            <p><span>(09:22:48) </span><strong>João </strong>reservadamente para <strong>Maria: </strong>Oi gatinha quer tc?</p>
+        </div>
 
+        
+    </div>
+
+    <div id="footer">
+        <input type="text" placeholder= "Escreva aqui..." class="field-message"/>
+        <ion-icon name="paper-plane-outline"></ion-icon>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

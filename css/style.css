@@ -1,0 +1,112 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* header */
+#header {
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.375rem;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#header img {
+    width: 4.6875rem;
+    height: 3.3125rem;
+}
+
+#header ion-icon {
+    font-size: 2rem;
+}
+
+/* conteudo */
+
+#content {
+    width: 100%;
+    height: 100%;
+
+    background: #F3F3F3;
+    padding: 5.75rem 0;
+}
+
+#content .message {
+    margin-top: 0.25rem;
+    border-radius: 0.125rem; 
+    padding: 0.5rem;
+}
+
+#content .message-status {
+    background: #DCDCDC;
+}
+
+#content .message-everyone {
+    background: white;
+}
+
+#content .message-private {
+    background: #FFDEDE;
+}
+
+#content p {
+
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: black
+}
+
+#content p span {
+    font-weight: 400;
+    color: #AAAAAA;
+}
+
+#content p strong {
+    font-weight: 700;
+}
+
+
+
+
+/* footer */
+#footer {
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.375rem;
+    background-color: white;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+#footer .field-message {
+    width: 85%;
+    height: 1.875rem;
+    border: none;
+}
+
+#footer input::placeholder {
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+}
+#footer ion-icon {
+    font-size: 1.8rem;
+}
