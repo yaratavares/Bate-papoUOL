@@ -108,3 +108,60 @@ body {
 #footer ion-icon {
     font-size: 1.8rem;
 }
+
+/* nav */
+#nav .background-nav {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: end;
+
+    position: fixed;
+    top:0;
+    z-index: 2;
+}
+
+#nav .background-nav .nav-click {
+    height: 100%;
+    width: 20%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#nav .background-nav .nav {
+    width: 80%;
+    height: 100%;
+
+    background: #FFFFFF;
+}
+
+.nav .span {
+    margin: 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav div {
+    height: 2.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav ion-icon {
+    margin: 0 0.65rem 0 1.5rem;
+    font-size: 1.25rem;
+}
+
+.nav .span span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#nav.hidden {
+    visibility: hidden;
+}
