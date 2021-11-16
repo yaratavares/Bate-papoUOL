@@ -114,19 +114,19 @@ function showList (){
     nav.classList.toggle("hidden");
 }
 
-// function reloadParticipants (){
-//     const theParticipants = axios.get('http://mock-api.driven.com.br/api/v4/uol/participants')
-
-//     promise.then(listParticipants);
-
-//     function listParticipants (response){
-//         const printParticipant = document.querySelector(".participants");
-//         for(let i=0; i <response.data.length ; i++){
-//             printParticipant.innerHTML += 
-//             `<div>
-//                 <ion-icon name="person-circle"></ion-icon>
-//                 <p>${response.data[i].name}</p>
-//             </div>`
-//         }
-//     }
-// }
+function reloadParticipants (){
+    const theParticipants = axios.get('https://mock-api.driven.com.br/api/v4/uol/participants');
+    theParticipants.then(listParticipants);
+    
+    function listParticipants (response){
+        console.log(response);
+        const printParticipant = document.querySelector(".participants");
+        for(let i=0; i <response.data.length ; i++){
+            printParticipant.innerHTML += 
+            `<div>
+                <ion-icon name="person-circle"></ion-icon>
+                <p>${response.data[i].name}</p>
+            </div>`
+        }
+    }
+}
