@@ -23,20 +23,12 @@
     </header>
 
     <div id="content">
-        <div class="message message-status">
-            <p><span>(09:21:45) </span><strong>João </strong>entra na sala...</p>
-        </div>
-        <div class="message message-everyone">
-            <p><span>(09:22:28) </span><strong>João </strong>para <strong>Todos: </strong>Bom dia</p>
-        </div>
-        <div class="message message-private">
-            <p><span>(09:22:48) </span><strong>João </strong>reservadamente para <strong>Maria: </strong>Oi gatinha quer tc?</p>
-        </div>
+        <!-- contem todas as divs mensagens -->
     </div>
 
     <div id="footer">
-        <input type="text" placeholder= "Escreva aqui..." class="field-message"/>
-        <ion-icon name="paper-plane-outline"></ion-icon>
+        <input id= "sendMessage" type="text" placeholder= "Escreva aqui..." class="field-message"/>
+        <ion-icon name="paper-plane-outline" data-identifier="send-message" onclick="sendMessage()"></ion-icon>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
